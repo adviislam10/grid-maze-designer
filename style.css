@@ -12,3 +12,16 @@
 .grey {
     background-color: grey;
 }
+
+.player {
+    background-color: red;
+}
+
+.clear {
+    padding-top: 20px;
+    clear: both;
+}
+
+select {
+    font-size: 20px;
+}

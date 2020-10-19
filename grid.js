@@ -22,14 +22,19 @@ function createDivGrid(grid) {
             // Create a div for each element in 2D grid
             let divEl = document.createElement('div');
 
+            // Add an id to each divEl
+            divEl.id = 'cell' + row + '-' + col;
+
             // Add appropriate class to each divEl
             if (grid[row][col] == 1) {
                 divEl.classList.add('grey');
+            } else if (grid[row][col] == 2) {
+                divEl.classList.add('player');
             }
 
             // Add dataset values for row and col
             divEl.dataset.row = row;
-            divEl.dataset.col - col;
+            divEl.dataset.col = col;
 
             // Add an event listener to each divEl 
             divEl.addEventListener('click', cellClicked);
